@@ -13,21 +13,21 @@
     
 <div class="painel">
   <h3>Login</h3>
-  <form>
+  <form action="acesso.php" method="post">
     <div class="form-group">
       <i class="fa-solid fa-user"></i>
       <label >CPF</label>
-      <input type="text" class="form-control" placeholder="Seu CPF">
+      <input name="cpf" type="text" class="form-control" placeholder="Seu CPF">
 
     </div>
     <div class="form-group">
       <i class="fa-solid fa-lock"></i>
       <label>Senha</label>
-      <input type="password" class="form-control" placeholder="Senha">
+      <input name="senha" type="password" class="form-control" placeholder="Senha">
     </div>
     <div class="form-group form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Salvar informações</label>
+      <label  class="form-check-label" for="exampleCheck1">Salvar informações</label>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
     <button type="reset" class="btn btn-danger">limpar</button>
