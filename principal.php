@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +38,10 @@
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+
+            <a  class="btn btn-outline-danger my-2 my-sm-0" type="submit" href="./sair.php">
+            <i class="fa-solid fa-arrow-right-from-bracket" style="color:white"></i>
+</a>
           </form>
         </div>
       </nav>
@@ -44,7 +49,8 @@
 
 
     <div class="row">
-      <div class="col-md-3"> 
+      <div class="col-md-3 menu">
+        <h6>Bem-vindo(a) <?php echo $_SESSION['usuario']; ?></h6> 
   <ul class="menu">
   <li><a href="./usuario.html" class="menu-item"> <i class="fa-solid fa-user"></i> Usuario </a> </li>
   <li><a href="./cidade.html" class="menu-item"> <i class="fa-solid fa-city"></i> Cidade </a></li>
