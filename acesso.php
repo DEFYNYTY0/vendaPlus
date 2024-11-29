@@ -1,5 +1,6 @@
 <?php
 //conectando arquivo de conexão em banco
+
 include 'conexao.php';
 
 //executando dados da tela de login
